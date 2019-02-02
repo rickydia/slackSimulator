@@ -1,10 +1,8 @@
 import React from 'react'
 import data from '../json/2019-01-31.json'
 import {
-  Container,
-  Header,
   PageLeftContent,
-  PageCenter,
+  PageCenterContent,
   PageRight
 } from '../components'
 
@@ -19,31 +17,22 @@ class App extends React.Component {
   render() {
     console.log(data);
     return (
-      <div>
+      <div style={styles.pageContentStyle}>
         <PageLeftContent />
-        <PageCenter threadOpen={this.state.threadOpen}>
-          <Header />
-          <Container />
-          <Container />
-          <Container />
-          <Container />
-          <Container />
-          <Container />
-          <Container />
-          <Container />
-          <Container />
-          <Container />
-          <Container />
-          <Container />
-          <Container />
-          <Container />
-          <Container />
-          <Container />
-        </PageCenter>
+        <PageCenterContent threadOpen={this.state.threadOpen} />
         <PageRight />
       </div>
     );
   }
 }
+
+const styles = {
+  pageContentStyle: {
+    height: 'auto',
+    width: 'auto',
+    margin: 0,
+    padding: 0,
+  },
+};
 
 export default App;
