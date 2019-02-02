@@ -11,7 +11,7 @@ export const PageRight = (props) => {
 const styles = {
   backgroundStyle: {
     background: 'orange',
-    height: '100%',
+    height: 'auto',
     width: 366,
     position: 'absolute',
     marginLeft: 435,

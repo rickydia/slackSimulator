@@ -11,11 +11,7 @@ export const Container = (props) => {
 const styles = {
   containerStyle: {
     position: 'relative',
-    margin: 10,
-    padding: 10,
-    height: 'auto',
+    height: 26,
     width: 'auto',
-    border: '2px solid grey',
-    borderRadius: 10,
   },
 };

@@ -2,11 +2,11 @@ import React from 'react'
 import data from '../json/2019-01-31.json'
 import {
   Container,
-  PageLeft,
+  Header,
+  PageLeftContent,
   PageCenter,
   PageRight
 } from '../components'
-
 
 class App extends React.Component {
   constructor(props) {
@@ -20,8 +20,24 @@ class App extends React.Component {
     console.log(data);
     return (
       <div>
-        <PageLeft />
+        <PageLeftContent />
         <PageCenter threadOpen={this.state.threadOpen}>
+          <Header />
+          <Container />
+          <Container />
+          <Container />
+          <Container />
+          <Container />
+          <Container />
+          <Container />
+          <Container />
+          <Container />
+          <Container />
+          <Container />
+          <Container />
+          <Container />
+          <Container />
+          <Container />
           <Container />
         </PageCenter>
         <PageRight />

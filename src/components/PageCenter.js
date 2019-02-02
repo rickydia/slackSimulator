@@ -12,8 +12,8 @@ export const PageCenter = (props) => {
 
 const styles = {
   backgroundClosed: {
-    background: 'black',
-    height: '100%',
+    background: '#FFFFFF',
+    height: 'auto',
     width: '100%-435px',
     minWidth: 235,
     position: 'absolute',
@@ -21,12 +21,12 @@ const styles = {
     right: 0,
     top: 0,
     display: 'block',
-    overflow: 'hidden',
+    overflow: 'scroll',
     zIndex: 9,
   },
   backgroundOpen: {
-    background: 'black',
-    height: '100%',
+    background: '#FFFFFF',
+    height: 'auto',
     width: '100%-400px',
     minWidth: 235,
     position: 'absolute',
@@ -34,7 +34,7 @@ const styles = {
     right: 366,
     top: 0,
     display: 'block',
-    overflow: 'hidden',
+    overflow: 'scroll',
     zIndex: 9,
   },
 };
